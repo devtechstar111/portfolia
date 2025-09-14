@@ -1,5 +1,5 @@
 const fs = require("fs");
-const globby = require("globby");
+const { globby } = require("globby");
 const prettier = require("prettier");
 const siteMetadata = require("../data/siteMetadata");
 
@@ -38,7 +38,7 @@ const siteMetadata = require("../data/siteMetadata");
         </urlset>
     `;
 
-  const formatted = prettier.format(sitemap, {
+  const formatted = await prettier.format(sitemap, {
     ...prettierConfig,
     parser: "html",
   });
