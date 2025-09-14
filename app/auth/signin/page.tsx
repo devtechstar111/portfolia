@@ -5,10 +5,11 @@ import { PageSEO } from "@/components/SEO";
 import siteMetadata from "@/data/siteMetadata";
 import CustomLink from "@/components/CustomLink";
 import { SignInError } from "@/components/SignInError";
-import { authConfig, signIn } from "auth";
+import { authOptions } from "@/auth";
+import { signIn } from "next-auth/react";
 
 export default function SignIn() {
-  const providers = authConfig.providers.map((provider) => ({
+  const providers = authOptions.providers.map((provider) => ({
     id: (provider as any).id,
     name: provider.name,
   }));

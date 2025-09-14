@@ -1,10 +1,11 @@
-import { auth } from "auth";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
 import Badge from "./Badge";
 import { getAllSkillsByCategory } from "@/lib/db";
 
 export default async function Skills() {
   const skillsByCategory = await getAllSkillsByCategory();
-  const session = await auth();
+  const session = await getServerSession(authOptions);
 
   return (
     <div>

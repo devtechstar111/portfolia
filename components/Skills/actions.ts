@@ -1,6 +1,7 @@
 "use server";
 
-import { auth } from "auth";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 
@@ -18,7 +19,7 @@ export const giveEndorsement = async (
     }
 
     const skillId = formData.get("skillId");
-    const session = await auth();
+    const session = await getServerSession(authOptions);
     if (!session) {
       return {
         message: "Unauthorized",

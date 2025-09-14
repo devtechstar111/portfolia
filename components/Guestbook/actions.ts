@@ -1,6 +1,7 @@
 "use server";
 
-import { auth } from "auth";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 
@@ -30,7 +31,7 @@ export const deleteEntry = async (
       };
     }
 
-    const session = await auth();
+    const session = await getServerSession(authOptions);
 
     if (!session?.user) {
       return {
@@ -76,7 +77,7 @@ export const addEntry = async (
       };
     }
 
-    const session = await auth();
+    const session = await getServerSession(authOptions);
 
     if (!session) {
       return {

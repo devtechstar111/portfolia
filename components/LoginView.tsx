@@ -1,8 +1,10 @@
-import { auth, signOut } from "auth";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
+import { signOut } from "next-auth/react";
 import CustomLink from "./CustomLink";
 
 export default async function LoginView() {
-  const session = await auth();
+  const session = await getServerSession(authOptions);
 
   return (
     <div>

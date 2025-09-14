@@ -21,7 +21,8 @@
       "@/data/*": ["data/*"],
       "@/layouts/*": ["layouts/*"],
       "@/lib/*": ["lib/*"],
-      "@/css/*": ["css/*"]
+      "@/css/*": ["css/*"],
+      "@/auth": ["auth.ts"]
     },
     "incremental": true,
     "plugins": [

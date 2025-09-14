@@ -1,11 +1,12 @@
 import GuestbookEntry from "./GuestbookEntry";
 import { getGuestbookEntries } from "@/lib/db";
-import { auth } from "auth";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
 import { AddEntryForm } from "./AddEntryForm";
 
 export default async function Guestbook() {
   const entries = await getGuestbookEntries();
-  const session = await auth();
+  const session = await getServerSession(authOptions);
 
   return (
     <div className="mt-4 space-y-8">
