@@ -1,6 +1,6 @@
 module.exports = {
   plugins: {
-    '@tailwindcss/postcss': {},
+    tailwindcss: {},
     autoprefixer: {
       // Suppress warnings about deprecated properties
       ignoreUnknownVersions: true,
