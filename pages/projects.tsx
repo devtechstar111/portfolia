@@ -1,7 +1,6 @@
 import siteMetadata from "@/data/siteMetadata";
 import ExternalCard from "@/components/ExternalCard";
 import { PageSEO } from "@/components/SEO";
-import { getAllProjects } from "@/lib/cms/datocms";
 import { InferGetStaticPropsType } from "next";
 import PageTitle from "@/components/PageTitle";
 
@@ -103,7 +102,40 @@ export default function Projects({ allProjects }: InferGetStaticPropsType<typeof
 }
 
 export const getStaticProps = async ({ preview = false }) => {
-  const allProjects = (await getAllProjects(preview)) || [];
+  let allProjects = [];
+  
+  try {
+    // Try to fetch from DatoCMS if available
+    const { getAllProjects } = await import("@/lib/cms/datocms");
+    allProjects = (await getAllProjects(preview)) || [];
+  } catch (error) {
+    // If DatoCMS is not available, use fallback data
+    console.log("DatoCMS not available, using fallback projects data");
+    allProjects = [
+      {
+        id: "1",
+        title: "Portfolio Website",
+        description: "A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS",
+        projectType: "product",
+        ready: true,
+        url: "https://github.com/LimWeiJin/portfolio-blog",
+        cover: {
+          url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+        }
+      },
+      {
+        id: "2", 
+        title: "E-commerce Platform",
+        description: "Full-stack e-commerce solution with React, Node.js, and MongoDB",
+        projectType: "sideGig",
+        ready: true,
+        url: "https://github.com/LimWeiJin/ecommerce-platform",
+        cover: {
+          url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop"
+        }
+      }
+    ];
+  }
 
   return {
     props: { allProjects },

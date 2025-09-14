@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thvu.dev/sitemap.xml
+Sitemap: https://limweijin.dev/sitemap.xml

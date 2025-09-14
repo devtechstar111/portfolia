@@ -40,7 +40,7 @@ export default function Hero() {
         </CustomLink>
         <div className="space-y-2 md:space-y-5">
           <PageTitle>
-            Xin chào! I'm Thắng{" "}
+            Hello! I'm Lim Wei Jin{" "}
             <span role="img" aria-label="waving hand" className="wave">
               👋
             </span>

@@ -1,6 +1,9 @@
 module.exports = {
   plugins: {
     tailwindcss: {},
-    autoprefixer: {},
+    autoprefixer: {
+      // Suppress warnings about deprecated properties
+      ignoreUnknownVersions: true,
+    },
   },
 };

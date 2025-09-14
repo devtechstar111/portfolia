@@ -4,13 +4,13 @@ import { AppProviders } from "@/components/AppProviders";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "THVu",
-  description: "THVu's site",
+  title: "Lim Wei Jin",
+  description: "Lim Wei Jin's portfolio site",
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://thvu.dev",
-    siteName: "THVu",
+    url: "https://limweijin.dev",
+    siteName: "Lim Wei Jin",
   },
 };
 

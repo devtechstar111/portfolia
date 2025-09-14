@@ -13,7 +13,7 @@ export default async function EndorsementsPage() {
     <>
       <PageSEO
         title={`Endorsements – ${siteMetadata.author}`}
-        description={"THVu's Endorsements"}
+        description={"Lim Wei Jin's Endorsements"}
       />
 
       <div className="flex flex-col items-start justify-center max-w-2xl pt-6 pb-8 space-y-2 md:space-y-5">

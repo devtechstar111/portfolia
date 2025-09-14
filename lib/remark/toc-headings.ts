@@ -4,13 +4,15 @@ import { toString } from "hast-util-to-string";
 import { Pluggable } from "unified";
 
 export default function remarkTocHeadings(options: any): Pluggable {
-  return (tree: any) =>
+  return (tree: any) => {
+    const slugger = new GitHubSlugger();
     visit(tree, "heading", (node) => {
       const textContent = toString(node);
       options.exportRef.push({
         value: textContent,
-        url: "#" + GitHubSlugger.slug(textContent),
+        url: "#" + slugger.slug(textContent),
         depth: (node as any).depth,
       });
     });
+  };
 }

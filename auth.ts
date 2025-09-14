@@ -24,8 +24,8 @@ export const authConfig: NextAuthConfig = {
     //       // for further details.
     //       body: JSON.stringify({
     //         personalizations: [{ to: [{ email }] }],
-    //         from: { email: "noreply@thvu.dev" },
-    //         subject: "Sign in to thvu.dev",
+    //         from: { email: "noreply@limweijin.dev" },
+    //         subject: "Sign in to limweijin.dev",
     //         content: [
     //           {
     //             type: "text/plain",

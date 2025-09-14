@@ -1,19 +1,19 @@
 {
-  "name": "thvu-blog",
+  "name": "limweijin-blog",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "pnpm clean && TAILWIND_MODE=watch next dev",
+    "dev": "npm run clean && set TAILWIND_MODE=watch && next dev",
     "build": "next build && node ./scripts/generate-sitemap",
     "clean": "rm -rf ./.next",
     "serve": "next start",
-    "analyze": "env ANALYZE=true next build",
+    "analyze": "set ANALYZE=true && next build",
     "prepare": "husky install",
     "lint": "npx next lint",
     "prisma:generate": "npx prisma generate",
     "prisma:studio": "npx prisma studio",
-    "pscale:shadow": "pscale connect thvu-blog shadow --port 3310",
-    "pscale:main": "pscale connect thvu-blog main --port 3309",
+    "pscale:shadow": "pscale connect limweijin-blog shadow --port 3310",
+    "pscale:main": "pscale connect limweijin-blog main --port 3309",
     "compose": "node ./scripts/compose.js"
   },
   "dependencies": {

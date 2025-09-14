@@ -2,12 +2,8 @@ import siteMetadata from "@/data/siteMetadata";
 import SocialIcon from "@/components/SocialIcon";
 import { PageSEO } from "@/components/SEO";
 import Image from "next/image";
-import { getAbout } from "@/lib/cms/datocms";
 import { InferGetStaticPropsType } from "next";
 import PageTitle from "@/components/PageTitle";
-import { renderRule, StructuredText } from "react-datocms";
-import { isLink } from "datocms-structured-text-utils";
-import CustomLink from "@/components/CustomLink";
 
 export default function About({ about }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { name, title, profilepicture, content, updatedAt } = about;
@@ -42,18 +38,9 @@ export default function About({ about }: InferGetStaticPropsType<typeof getStati
           </div>
         </div>
         <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
-          <StructuredText
-            data={content}
-            customRules={[
-              renderRule(isLink, ({ node }) => (
-                <CustomLink href={node.url}>
-                  {node.children.map((child) => {
-                    return <child.type key={child.value}>{child.value}</child.type>;
-                  })}
-                </CustomLink>
-              )),
-            ]}
-          />
+          <div>
+            <p>I'm a passionate full-stack developer from Malaysia with expertise in modern web technologies. I love building scalable applications and exploring new technologies.</p>
+          </div>
           <div className="mt-14">
             <p className="text-gray-300 dark:text-gray-700">
               Last updated at{" "}
@@ -73,7 +60,49 @@ export default function About({ about }: InferGetStaticPropsType<typeof getStati
 }
 
 export async function getStaticProps({ preview = false }) {
-  const about = (await getAbout(preview)) || [];
+  // Fallback data if DatoCMS is not available
+  const fallbackAbout = {
+    name: siteMetadata.author,
+    title: "Full Stack Developer",
+    profilepicture: {
+      url: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      alt: siteMetadata.author,
+      blurUpThumb: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+    },
+    content: {
+      value: {
+        document: {
+          type: "root",
+          children: [
+            {
+              type: "paragraph",
+              children: [
+                {
+                  type: "text",
+                  value: "I'm a passionate full-stack developer from Malaysia with expertise in modern web technologies. I love building scalable applications and exploring new technologies."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    updatedAt: new Date().toISOString()
+  };
+
+  let about = fallbackAbout;
+  
+  try {
+    // Try to fetch from DatoCMS if available
+    const { getAbout } = await import("@/lib/cms/datocms");
+    const datocmsData = await getAbout(preview);
+    if (datocmsData) {
+      about = datocmsData;
+    }
+  } catch (error) {
+    // If DatoCMS is not available, use fallback data
+    console.log("DatoCMS not available, using fallback data");
+  }
 
   return {
     props: { about },

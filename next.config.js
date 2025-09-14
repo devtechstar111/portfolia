@@ -75,6 +75,17 @@ const nextConfig = {
       use: ["@svgr/webpack"],
     });
 
+    // Suppress CSS warnings
+    config.stats = {
+      ...config.stats,
+      warnings: false,
+      warningsFilter: [
+        /autoprefixer/,
+        /color-adjust/,
+        /print-color-adjust/
+      ]
+    };
+
     // if (!dev && !isServer) {
     //   // Replace React with Preact only in client production build
     //   Object.assign(config.resolve.alias, {
