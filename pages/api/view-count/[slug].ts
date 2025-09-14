@@ -7,6 +7,10 @@ export default async function handler(
 ) {
   const slug = req.query.slug?.toString();
   try {
+    if (!prisma) {
+      return res.status(503).json({ message: "Database not available" });
+    }
+
     if (slug) {
       if (req.method === "POST") {
         const newOrUpdatedViews = await prisma.view.upsert({

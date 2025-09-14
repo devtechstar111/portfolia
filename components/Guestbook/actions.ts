@@ -11,6 +11,12 @@ export const deleteEntry = async (
   formData: FormData
 ) => {
   try {
+    if (!prisma) {
+      return {
+        message: "Database not available. Please set up DATABASE_URL environment variable.",
+      };
+    }
+
     const id = formData.get("id");
     const entry = await prisma.guestbook.findUnique({
       where: {
@@ -64,6 +70,12 @@ export const addEntry = async (
   formData: FormData
 ) => {
   try {
+    if (!prisma) {
+      return {
+        message: "Database not available. Please set up DATABASE_URL environment variable.",
+      };
+    }
+
     const session = await auth();
 
     if (!session) {

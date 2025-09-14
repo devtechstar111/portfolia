@@ -16,6 +16,11 @@ export async function getAllBlogPosts() {
 
 export async function getAllSkillsByCategory() {
   try {
+    if (!prisma) {
+      console.warn("Database not available - returning empty skills");
+      return [];
+    }
+
     const skillsByCategory = await prisma.skillCategory.findMany({
       include: {
         skills_in_category: {
@@ -52,6 +57,11 @@ export async function getAllSkillsByCategory() {
 
 export async function getGuestbookEntries() {
   try {
+    if (!prisma) {
+      console.warn("Database not available - returning empty guestbook entries");
+      return [];
+    }
+
     const entries = await prisma.guestbook.findMany({
       orderBy: {
         updated_at: "desc",

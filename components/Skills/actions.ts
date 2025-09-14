@@ -11,6 +11,12 @@ export const giveEndorsement = async (
   formData: FormData
 ) => {
   try {
+    if (!prisma) {
+      return {
+        message: "Database not available. Please set up DATABASE_URL environment variable.",
+      };
+    }
+
     const skillId = formData.get("skillId");
     const session = await auth();
     if (!session) {
