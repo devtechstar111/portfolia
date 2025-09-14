@@ -11,7 +11,7 @@ const projectsData = [
     image: "/static/images/logo.png",
     technologies: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
     liveUrl: "https://demo.tasklist.com.ar/login",
-    githubUrl: "https://github.com/darktomcat119/GrowSaaS",
+    githubUrl: "https://github.com/weijinlim/tasklist",
     featured: true
   },
   {
