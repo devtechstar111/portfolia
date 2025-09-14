@@ -19,7 +19,7 @@ const projectsData = [
     description: "A complete SaaS platform for business growth management. Features include multi-tenant architecture, user management, and comprehensive business analytics dashboard.",
     image: "/static/images/logo.png",
     technologies: ["Laravel", "PHP", "Blade", "MySQL", "SCSS"],
-    liveUrl: "https://github.com/darktomcat119/GrowSaaS",
+    liveUrl: "https://gizmobuy.com/",
     githubUrl: "https://github.com/darktomcat119/GrowSaaS",
     featured: true
   },
@@ -28,7 +28,7 @@ const projectsData = [
     description: "A modern e-commerce platform specializing in electronics and gadgets. Features include product catalog, shopping cart, payment integration, and order management system.",
     image: "/static/images/logo.png",
     technologies: ["PHP", "MySQL", "JavaScript", "CSS3", "E-commerce"],
-    liveUrl: "https://www.gizmobuy.com/",
+    liveUrl: "https://gizmobuy.com/",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: true
   },
@@ -37,7 +37,7 @@ const projectsData = [
     description: "A technology solutions website showcasing various tech services and products. Built with responsive design and modern web standards for optimal user experience.",
     image: "/static/images/logo.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO"],
-    liveUrl: "https://gizmostech.com/",
+    liveUrl: "https://www.fullcircl.com/",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: false
   },
@@ -46,7 +46,7 @@ const projectsData = [
     description: "A comprehensive business platform providing end-to-end solutions for companies. Features include project management, client communication, and business analytics.",
     image: "/static/images/logo.png",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "REST API"],
-    liveUrl: "https://www.fullcircl.com/",
+    liveUrl: "https://app.crmworkspace.com/users/login",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: false
   },
@@ -55,7 +55,7 @@ const projectsData = [
     description: "A customer relationship management system designed for businesses to manage their client interactions, sales pipeline, and customer data effectively.",
     image: "/static/images/logo.png",
     technologies: ["Vue.js", "Laravel", "MySQL", "Bootstrap", "Chart.js"],
-    liveUrl: "https://app.crmworkspace.com/users/login",
+    liveUrl: "https://www.coingecko.com/",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: false
   },
