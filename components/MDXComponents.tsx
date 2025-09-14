@@ -6,23 +6,6 @@ import Pre from "./Pre";
 import { useMemo } from "react";
 import PostLayout from "@/layouts/PostLayout";
 
-// Simple CodePen component replacement
-const CodePen = ({ codePenId }: { codePenId: string }) => (
-  <div className="my-8 p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-      CodePen Embed: {codePenId}
-    </p>
-    <a 
-      href={`https://codepen.io/pen/${codePenId}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 dark:text-blue-400 hover:underline"
-    >
-      View on CodePen →
-    </a>
-  </div>
-);
-
 // Simple Tweet component replacement
 const Tweet = ({ tweetLink }: { tweetLink: string }) => (
   <div className="my-8 p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -42,7 +25,6 @@ const Tweet = ({ tweetLink }: { tweetLink: string }) => (
 
 export const MDXComponents: ComponentMap = {
   Image,
-  CodePen,
   Tweet,
   TOCInline,
   // @ts-expect-error

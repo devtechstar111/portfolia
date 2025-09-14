@@ -6,7 +6,7 @@ export function middleware(_req: NextRequest, _ev: NextFetchEvent) {
   const csp = `
     default-src 'self';
     script-src 'self' *.twitter.com 'unsafe-eval' 'unsafe-inline' data:;
-    child-src *.twitter.com https://cdpn.io https://codepen.io https://dbdiagram.io;
+    child-src *.twitter.com https://dbdiagram.io;
     style-src 'self' 'unsafe-inline' 'unsafe-eval';
     img-src 'self' data: https: blob: ;
     worker-src 'self' *.twitter.com;

@@ -33,7 +33,6 @@ export default function About({ about }: InferGetStaticPropsType<typeof getStati
           <div className="flex pt-6 space-x-3">
             <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
             <SocialIcon kind="github" href={siteMetadata.github} />
-            <SocialIcon kind="codepen" href={siteMetadata.codepen} />
             <SocialIcon kind="twitter" href={siteMetadata.twitter} />
           </div>
         </div>

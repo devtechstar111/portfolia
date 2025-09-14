@@ -9,11 +9,10 @@ const siteMetadata = {
   siteLogo: "/static/images/logo.png",
   image: "https://pbs.twimg.com/profile_images/1853846849989550081/Wx-52OPe_400x400.jpg",
   socialBanner: "/static/images/social-banner.png",
-  email: "hi@limweijin.dev",
-  github: "https://github.com/LimWeiJin",
+  email: "devtechstar111@gmail.com",
+  github: "https://github.com/devtechstar111/",
   twitter: "https://twitter.com/limweijin",
   linkedin: "https://www.linkedin.com/in/limweijin/",
-  codepen: "https://codepen.io/limweijin",
   locale: "en-US",
 };
 
