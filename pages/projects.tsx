@@ -6,56 +6,65 @@ import Image from "next/image";
 
 const projectsData = [
   {
-    title: "Portfolio Website",
-    description: "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features include blog functionality, project showcase, and contact form.",
+    title: "Task Management System",
+    description: "A comprehensive task management application with user authentication, project tracking, and team collaboration features. Built with modern web technologies for optimal performance.",
     image: "/static/images/logo.png",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MDX", "Vercel"],
-    liveUrl: "https://limweijin.dev",
+    technologies: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
+    liveUrl: "https://demo.tasklist.com.ar/login",
+    githubUrl: "https://github.com/darktomcat119/GrowSaaS",
+    featured: true
+  },
+  {
+    title: "GrowSaaS Platform",
+    description: "A complete SaaS platform for business growth management. Features include multi-tenant architecture, user management, and comprehensive business analytics dashboard.",
+    image: "/static/images/logo.png",
+    technologies: ["Laravel", "PHP", "Blade", "MySQL", "SCSS"],
+    liveUrl: "https://github.com/darktomcat119/GrowSaaS",
+    githubUrl: "https://github.com/darktomcat119/GrowSaaS",
+    featured: true
+  },
+  {
+    title: "GizmoBuy E-commerce",
+    description: "A modern e-commerce platform specializing in electronics and gadgets. Features include product catalog, shopping cart, payment integration, and order management system.",
+    image: "/static/images/logo.png",
+    technologies: ["PHP", "MySQL", "JavaScript", "CSS3", "E-commerce"],
+    liveUrl: "https://www.gizmobuy.com/",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: true
   },
   {
-    title: "CSS in Real World - Vercel Clone",
-    description: "Recreated Vercel's develop, preview, and ship workflow using Tailwind CSS. A comprehensive guide to modern CSS techniques and responsive design patterns.",
-    image: "/static/blog/css-in-real-world-recreate-vercel-develop-preview-ship-with-tailwind-css/css-in-real-world-verccel-hero-tailwind-css.png",
-    technologies: ["Tailwind CSS", "Next.js", "CSS3", "Responsive Design", "Vercel"],
-    liveUrl: "https://limweijin.dev/blog/css-in-real-world-recreate-vercel-develop-preview-ship-with-tailwind-css",
-    githubUrl: "https://github.com/devtechstar111/portfolio",
-    featured: true
-  },
-  {
-    title: "Fullstack Workflow with Prisma",
-    description: "Complete full-stack development workflow using Prisma and PlanetScale in Next.js. Includes database management, API development, and deployment strategies.",
-    image: "/static/blog/develop-a-fullstack-workflow-with-prisma-and-planetscale-in-nextjs/develop-a-fullstack-workflow-with-prisma-and-planetscale-in-nextjs.png",
-    technologies: ["Next.js", "Prisma", "PlanetScale", "TypeScript", "MySQL"],
-    liveUrl: "https://limweijin.dev/blog/develop-a-fullstack-workflow-with-prisma-and-planetscale-in-nextjs",
-    githubUrl: "https://github.com/devtechstar111/portfolio",
-    featured: true
-  },
-  {
-    title: "Over-engineering Portfolio",
-    description: "A deep dive into the technical decisions and architecture behind building a modern portfolio website. Covers performance optimization, SEO, and developer experience.",
-    image: "/static/blog/over-engineering-thvu-dev/over-engineering-thvu-dev.png",
-    technologies: ["Next.js", "MDX", "Tailwind CSS", "Vercel", "SEO"],
-    liveUrl: "https://limweijin.dev/blog/over-engineering-thvu-dev",
+    title: "GizmoTech Solutions",
+    description: "A technology solutions website showcasing various tech services and products. Built with responsive design and modern web standards for optimal user experience.",
+    image: "/static/images/logo.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO"],
+    liveUrl: "https://gizmostech.com/",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: false
   },
   {
-    title: "NextAuth.js Implementation",
-    description: "Comprehensive guide to implementing authentication in Next.js applications using NextAuth.js. Covers OAuth providers, database sessions, and security best practices.",
+    title: "FullCircle Platform",
+    description: "A comprehensive business platform providing end-to-end solutions for companies. Features include project management, client communication, and business analytics.",
     image: "/static/images/logo.png",
-    technologies: ["NextAuth.js", "Next.js", "OAuth", "Security", "TypeScript"],
-    liveUrl: "https://limweijin.dev/blog/how-nextauthjs-works",
+    technologies: ["React", "Node.js", "MongoDB", "Express.js", "REST API"],
+    liveUrl: "https://www.fullcircl.com/",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: false
   },
   {
-    title: "Prisma Database Migration",
-    description: "Step-by-step guide to migrating and rebuilding database schemas using Prisma. Includes data migration strategies and best practices for production deployments.",
-    image: "/static/blog/rebuild-bakia-prisma/rebuild-bakia-prisma.png",
-    technologies: ["Prisma", "Database", "Migration", "TypeScript", "PostgreSQL"],
-    liveUrl: "https://limweijin.dev/blog/rebuild-bakia-prisma",
+    title: "CRM Workspace",
+    description: "A customer relationship management system designed for businesses to manage their client interactions, sales pipeline, and customer data effectively.",
+    image: "/static/images/logo.png",
+    technologies: ["Vue.js", "Laravel", "MySQL", "Bootstrap", "Chart.js"],
+    liveUrl: "https://app.crmworkspace.com/users/login",
+    githubUrl: "https://github.com/devtechstar111/portfolio",
+    featured: false
+  },
+  {
+    title: "Crypto Analytics Dashboard",
+    description: "A cryptocurrency market analysis platform providing real-time data, price tracking, and market insights. Integrated with multiple crypto APIs for comprehensive data.",
+    image: "/static/images/logo.png",
+    technologies: ["React", "TypeScript", "Chart.js", "REST API", "WebSocket"],
+    liveUrl: "https://www.coingecko.com/",
     githubUrl: "https://github.com/devtechstar111/portfolio",
     featured: false
   }
