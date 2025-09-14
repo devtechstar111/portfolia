@@ -4,12 +4,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 // const withPWA = require("next-pwa");
 // const runtimeCaching = require("next-pwa/cache");
 
-const { withSentryConfig } = require("@sentry/nextjs");
-
-const SentryWebpackPluginOptions = {
-  silent: true,
-};
-
 const isDevelopment = process.env.NODE_ENV === "development";
 
 // @ts-check
@@ -103,4 +97,4 @@ const nextConfig = {
 
 module.exports = isDevelopment
   ? nextConfig
-  : withSentryConfig(withBundleAnalyzer(nextConfig), SentryWebpackPluginOptions);
+  : withBundleAnalyzer(nextConfig);
