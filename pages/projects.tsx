@@ -29,7 +29,7 @@ const projectsData = [
     image: "/static/images/logo.png",
     technologies: ["PHP", "MySQL", "JavaScript", "CSS3", "E-commerce"],
     liveUrl: "https://gizmobuy.com/",
-    githubUrl: "https://github.com/devtechstar111/portfolio",
+    githubUrl: "https://github.com/weijinlim/portfolio",
     featured: true
   },
   {
@@ -38,7 +38,7 @@ const projectsData = [
     image: "/static/images/logo.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO"],
     liveUrl: "https://www.fullcircl.com/",
-    githubUrl: "https://github.com/devtechstar111/portfolio",
+    githubUrl: "https://github.com/weijinlim/portfolio",
     featured: false
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     image: "/static/images/logo.png",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "REST API"],
     liveUrl: "https://app.crmworkspace.com/users/login",
-    githubUrl: "https://github.com/devtechstar111/portfolio",
+    githubUrl: "https://github.com/weijinlim/portfolio",
     featured: false
   },
   {
@@ -56,7 +56,7 @@ const projectsData = [
     image: "/static/images/logo.png",
     technologies: ["Vue.js", "Laravel", "MySQL", "Bootstrap", "Chart.js"],
     liveUrl: "https://www.coingecko.com/",
-    githubUrl: "https://github.com/devtechstar111/portfolio",
+    githubUrl: "https://github.com/weijinlim/portfolio",
     featured: false
   },
   {
@@ -65,7 +65,7 @@ const projectsData = [
     image: "/static/images/logo.png",
     technologies: ["React", "TypeScript", "Chart.js", "REST API", "WebSocket"],
     liveUrl: "https://www.coingecko.com/",
-    githubUrl: "https://github.com/devtechstar111/portfolio",
+    githubUrl: "https://github.com/weijinlim/portfolio",
     featured: false
   }
 ];
