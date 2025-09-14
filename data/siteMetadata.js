@@ -11,7 +11,7 @@ const siteMetadata = {
   socialBanner: "/static/images/social-banner.png",
   email: "devtechstar111@gmail.com",
   github: "https://github.com/devtechstar111/",
-  twitter: "https://twitter.com/limweijin",
+  discord: "https://discord.gg/devtechstar111",
   linkedin: "https://www.linkedin.com/in/limweijin/",
   locale: "en-US",
 };

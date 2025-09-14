@@ -5,11 +5,11 @@ export function middleware(_req: NextRequest, _ev: NextFetchEvent) {
   const response = NextResponse.next();
   const csp = `
     default-src 'self';
-    script-src 'self' *.twitter.com 'unsafe-eval' 'unsafe-inline' data:;
-    child-src *.twitter.com https://dbdiagram.io;
+    script-src 'self' *.discord.com 'unsafe-eval' 'unsafe-inline' data:;
+    child-src *.discord.com https://dbdiagram.io;
     style-src 'self' 'unsafe-inline' 'unsafe-eval';
     img-src 'self' data: https: blob: ;
-    worker-src 'self' *.twitter.com;
+    worker-src 'self' *.discord.com;
     connect-src *;
     object-src 'none';
     form-action 'self';

@@ -6,26 +6,26 @@ import Pre from "./Pre";
 import { useMemo } from "react";
 import PostLayout from "@/layouts/PostLayout";
 
-// Simple Tweet component replacement
-const Tweet = ({ tweetLink }: { tweetLink: string }) => (
+// Simple Discord component replacement
+const Discord = ({ discordLink }: { discordLink: string }) => (
   <div className="my-8 p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
     <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-      Tweet: {tweetLink}
+      Discord: {discordLink}
     </p>
     <a 
-      href={`https://twitter.com/${tweetLink}`}
+      href={`https://discord.gg/${discordLink}`}
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-600 dark:text-blue-400 hover:underline"
     >
-      View Tweet →
+      Join Discord →
     </a>
   </div>
 );
 
 export const MDXComponents: ComponentMap = {
   Image,
-  Tweet,
+  Discord,
   TOCInline,
   // @ts-expect-error
   a: CustomLink,

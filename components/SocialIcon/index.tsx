@@ -2,7 +2,7 @@
 import Mail from "./mail.svg";
 import Github from "./github.svg";
 import Linkedin from "./linkedin.svg";
-import Twitter from "./twitter.svg";
+import Discord from "./discord.svg";
 import Link from "next/link";
 
 interface ComponentProps {
@@ -12,7 +12,7 @@ const components: { [kind: string]: any } = {
   mail: Mail,
   github: Github,
   linkedin: Linkedin,
-  twitter: Twitter,
+  discord: Discord,
 };
 
 interface Props {

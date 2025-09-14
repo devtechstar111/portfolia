@@ -10,9 +10,7 @@ import { Container } from "@/lib/types/common";
 
 const editUrl = (fileName: string) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
 const discussUrl = (slug: string) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`;
+  `https://discord.gg/devtechstar111`;
 
 interface PostLayoutProps extends Container {
   frontMatter: EnhancedFrontMatter;
@@ -76,13 +74,13 @@ export default function PostLayout({ children, frontMatter, next, prev }: PostLa
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                       <dt className="sr-only">Name</dt>
                       <dd className="text-gray-900 dark:text-gray-100">{siteMetadata.author}</dd>
-                      <dt className="sr-only">Twitter</dt>
+                      <dt className="sr-only">Discord</dt>
                       <dd>
                         <CustomLink
-                          href={siteMetadata.twitter}
+                          href={siteMetadata.discord}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                         >
-                          {siteMetadata.twitter.replace("https://twitter.com/", "@")}
+                          Discord Server
                         </CustomLink>
                       </dd>
                     </dl>
@@ -94,7 +92,7 @@ export default function PostLayout({ children, frontMatter, next, prev }: PostLa
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <CustomLink href={discussUrl(slug!)} rel="nofollow">
-                  {"Discuss on Twitter"}
+                  {"Join Discord"}
                 </CustomLink>
                 {` • `}
                 <CustomLink href={editUrl(fileName)}>{"View on GitHub"}</CustomLink>

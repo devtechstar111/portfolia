@@ -34,11 +34,11 @@ const CommonSEO = ({
       ) : (
         ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
       )}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={siteMetadata.twitter} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={twImage} />
+      <meta name="discord:card" content="summary_large_image" />
+      <meta name="discord:site" content={siteMetadata.discord} />
+      <meta name="discord:title" content={title} />
+      <meta name="discord:description" content={description} />
+      <meta name="discord:image" content={twImage} />
     </Head>
   );
 };
