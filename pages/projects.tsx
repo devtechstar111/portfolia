@@ -91,7 +91,7 @@ export default function Projects() {
       {/* Featured Projects */}
       <div className="space-y-8">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Featured Projects</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {featuredProjects.map((project, index) => (
             <div key={index} className="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
               <div className="aspect-video relative overflow-hidden">
