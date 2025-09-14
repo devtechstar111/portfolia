@@ -8,7 +8,7 @@ const projectsData = [
   {
     title: "Task Management System",
     description: "A comprehensive task management application with user authentication, project tracking, and team collaboration features. Built with modern web technologies for optimal performance.",
-    image: "/static/images/logo.png",
+    image: "/static/blog/over-engineering-thvu-dev/cover.jpg",
     technologies: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
     liveUrl: "https://demo.tasklist.com.ar/login",
     githubUrl: "https://github.com/weijinlim/tasklist",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     title: "GrowSaaS Platform",
     description: "A complete SaaS platform for business growth management. Features include multi-tenant architecture, user management, and comprehensive business analytics dashboard.",
-    image: "/static/images/logo.png",
+    image: "/static/blog/develop-a-fullstack-workflow-with-prisma-and-planetscale-in-nextjs/cover.jpg",
     technologies: ["Laravel", "PHP", "Blade", "MySQL", "SCSS"],
     liveUrl: "https://gizmobuy.com/",
     githubUrl: "https://github.com/darktomcat119/GrowSaaS",
@@ -26,7 +26,7 @@ const projectsData = [
   {
     title: "GizmoBuy E-commerce",
     description: "A modern e-commerce platform specializing in electronics and gadgets. Features include product catalog, shopping cart, payment integration, and order management system.",
-    image: "/static/images/logo.png",
+    image: "/static/blog/css-in-real-world-recreate-vercel-develop-preview-ship-with-tailwind-css/cover.jpg",
     technologies: ["PHP", "MySQL", "JavaScript", "CSS3", "E-commerce"],
     liveUrl: "https://gizmobuy.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     title: "GizmoTech Solutions",
     description: "A technology solutions website showcasing various tech services and products. Built with responsive design and modern web standards for optimal user experience.",
-    image: "/static/images/logo.png",
+    image: "/static/blog/rebuild-bakia-prisma/cover.jpg",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO"],
     liveUrl: "https://www.fullcircl.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -44,7 +44,7 @@ const projectsData = [
   {
     title: "FullCircle Platform",
     description: "A comprehensive business platform providing end-to-end solutions for companies. Features include project management, client communication, and business analytics.",
-    image: "/static/images/logo.png",
+    image: "/static/blog/how-nextauthjs-works/cover.jpg",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "REST API"],
     liveUrl: "https://app.crmworkspace.com/users/login",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -53,7 +53,7 @@ const projectsData = [
   {
     title: "CRM Workspace",
     description: "A customer relationship management system designed for businesses to manage their client interactions, sales pipeline, and customer data effectively.",
-    image: "/static/images/logo.png",
+    image: "/static/blog/nextauthjs-behinds-a-proxy/cover.jpg",
     technologies: ["Vue.js", "Laravel", "MySQL", "Bootstrap", "Chart.js"],
     liveUrl: "https://www.coingecko.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -62,7 +62,7 @@ const projectsData = [
   {
     title: "Crypto Analytics Dashboard",
     description: "A cryptocurrency market analysis platform providing real-time data, price tracking, and market insights. Integrated with multiple crypto APIs for comprehensive data.",
-    image: "/static/images/logo.png",
+    image: "/static/images/social-banner.png",
     technologies: ["React", "TypeScript", "Chart.js", "REST API", "WebSocket"],
     liveUrl: "https://www.coingecko.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -142,11 +142,11 @@ export default function Projects() {
                     >
                       {tech}
                     </span>
-                  ))}
-                </div>
-              </div>
+            ))}
+        </div>
+      </div>
             </div>
-          ))}
+            ))}
         </div>
       </div>
 
@@ -200,7 +200,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-          ))}
+            ))}
         </div>
       </div>
 
