@@ -7,7 +7,7 @@ const siteMetadata = {
   siteUrl: "https://limweijin.dev",
   siteRepo: "https://github.com/weijinlim/portfolio",
   siteLogo: "/static/images/logo.png",
-  image: "https://pbs.twimg.com/profile_images/1853846849989550081/Wx-52OPe_400x400.jpg",
+  image: "/static/images/lim-weijin-avatar.jpg",
   socialBanner: "/static/images/social-banner.png",
   email: "devtechstar@gmail.com",
   github: "https://github.com/devtechstar111/",
