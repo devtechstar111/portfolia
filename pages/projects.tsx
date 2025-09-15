@@ -15,15 +15,6 @@ const projectsData = [
     featured: true
   },
   {
-    title: "GrowSaaS Platform",
-    description: "A complete SaaS platform for business growth management. Features include multi-tenant architecture, user management, and comprehensive business analytics dashboard.",
-    image: "/static/blog/develop-a-fullstack-workflow-with-prisma-and-planetscale-in-nextjs/cover.jpg",
-    technologies: ["Laravel", "PHP", "Blade", "MySQL", "SCSS"],
-    liveUrl: "https://gizmobuy.com/",
-    githubUrl: "https://github.com/darktomcat119/GrowSaaS",
-    featured: true
-  },
-  {
     title: "GizmoBuy E-commerce",
     description: "A modern e-commerce platform specializing in electronics and gadgets. Features include product catalog, shopping cart, payment integration, and order management system.",
     image: "/static/blog/css-in-real-world-recreate-vercel-develop-preview-ship-with-tailwind-css/cover.jpg",
