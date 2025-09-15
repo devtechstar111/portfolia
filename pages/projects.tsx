@@ -8,7 +8,7 @@ const projectsData = [
   {
     title: "Task Management System",
     description: "A comprehensive task management application with user authentication, project tracking, and team collaboration features. Built with modern web technologies for optimal performance.",
-    image: "/static/blog/over-engineering-thvu-dev/cover.jpg",
+    image: "/static/images/demo1.png",
     technologies: ["Laravel", "PHP", "MySQL", "JavaScript", "Bootstrap"],
     liveUrl: "https://demo.tasklist.com.ar/login",
     githubUrl: "https://github.com/weijinlim/tasklist",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     title: "GizmoBuy E-commerce",
     description: "A modern e-commerce platform specializing in electronics and gadgets. Features include product catalog, shopping cart, payment integration, and order management system.",
-    image: "/static/blog/css-in-real-world-recreate-vercel-develop-preview-ship-with-tailwind-css/cover.jpg",
+    image: "/static/images/demo2.png",
     technologies: ["PHP", "MySQL", "JavaScript", "CSS3", "E-commerce"],
     liveUrl: "https://gizmobuy.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -26,7 +26,7 @@ const projectsData = [
   {
     title: "GizmoTech Solutions",
     description: "A technology solutions website showcasing various tech services and products. Built with responsive design and modern web standards for optimal user experience.",
-    image: "/static/blog/rebuild-bakia-prisma/cover.jpg",
+    image: "/static/images/demo3.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO"],
     liveUrl: "https://gizmostech.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     title: "FullCircle Platform",
     description: "A comprehensive business platform providing end-to-end solutions for companies. Features include project management, client communication, and business analytics.",
-    image: "/static/blog/how-nextauthjs-works/cover.jpg",
+    image: "/static/images/demo4.png",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "REST API"],
     liveUrl: "https://www.fullcircl.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -44,7 +44,7 @@ const projectsData = [
   {
     title: "CRM Workspace",
     description: "A customer relationship management system designed for businesses to manage their client interactions, sales pipeline, and customer data effectively.",
-    image: "/static/blog/nextauthjs-behinds-a-proxy/cover.jpg",
+    image: "/static/images/demo5.png",
     technologies: ["Vue.js", "Laravel", "MySQL", "Bootstrap", "Chart.js"],
     liveUrl: "https://app.crmworkspace.com/users/login",
     githubUrl: "https://github.com/weijinlim/portfolio",
@@ -53,7 +53,7 @@ const projectsData = [
   {
     title: "Crypto Analytics Dashboard",
     description: "A cryptocurrency market analysis platform providing real-time data, price tracking, and market insights. Integrated with multiple crypto APIs for comprehensive data.",
-    image: "/static/images/social-banner.png",
+    image: "/static/images/demo6.png",
     technologies: ["React", "TypeScript", "Chart.js", "REST API", "WebSocket"],
     liveUrl: "https://www.coingecko.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
