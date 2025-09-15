@@ -37,9 +37,59 @@ export default function About({ about }: InferGetStaticPropsType<typeof getStati
           </div>
         </div>
         <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
-          <div>
-            <p>I'm a passionate full-stack developer from Malaysia with expertise in modern web technologies. I love building scalable applications and exploring new technologies.</p>
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">About Me</h2>
+              <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
+                I'm Lim Wei Jin, a Senior Full-Stack Developer with 7+ years of experience architecting, building, and scaling web and mobile applications across diverse industries including AI/ML, FinTech, EdTech, SaaS, Logistics, and Enterprise Software.
+              </p>
+              <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
+                Currently based in Kuala Lumpur, Malaysia, I work remotely with international teams, bringing expertise in modern web technologies and cloud-native development. I'm passionate about clean code, scalable architectures, and mentoring junior developers.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">What I Do</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+                <li>Design and develop scalable microservices-based backends using Node.js, Django, and Express.js</li>
+                <li>Build responsive frontend applications with React, Next.js, Vue.js, and modern JavaScript frameworks</li>
+                <li>Integrate AI/ML capabilities using OpenAI APIs, TensorFlow, and custom recommendation engines</li>
+                <li>Implement cloud-native solutions on AWS, Azure, and Google Cloud Platform</li>
+                <li>Create real-time applications with WebSockets, GraphQL, and WebRTC technologies</li>
+                <li>Mentor junior developers and lead technical architecture decisions</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Achievements</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+                <li>Led development of AI-powered learning platform serving 100k+ users with real-time recommendations</li>
+                <li>Built FinTech SaaS platform handling thousands of daily secure transactions with PCI DSS compliance</li>
+                <li>Optimized database queries and caching layers, improving backend performance by 65%</li>
+                <li>Implemented CI/CD pipelines reducing deployment time from 2 hours to 15 minutes</li>
+                <li>Mentored 3+ junior developers, improving team productivity by 25%</li>
+                <li>Delivered 15+ client projects on time and within budget across various industries</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Education & Certifications</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-2">
+                <strong>Bachelor of Science in Computer Science</strong> - University of Malaya (2012-2017)
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <strong>Certifications:</strong> AWS Certified Solutions Architect Associate, Certified Kubernetes Application Developer (CKAD), Microsoft Certified Azure Developer Associate
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Beyond Code</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                When I'm not coding, I enjoy contributing to open-source projects, participating in tech meetups across Malaysia, and exploring the latest trends in AI and machine learning. I believe in continuous learning and sharing knowledge with the developer community.
+              </p>
+            </div>
           </div>
+
           <div className="mt-14">
             <p className="text-gray-300 dark:text-gray-700">
               Last updated at{" "}
