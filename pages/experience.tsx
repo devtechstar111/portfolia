@@ -4,74 +4,78 @@ import PageTitle from "@/components/PageTitle";
 
 const experienceData = [
   {
-    company: "Tech Solutions Inc.",
+    company: "Wolfpack Digital",
     position: "Senior Full-Stack Developer",
-    location: "Kuala Lumpur, Malaysia",
-    duration: "2022 - Present",
+    location: "Cluj-Napoca, Romania (Remote)",
+    duration: "2021 - Present",
     type: "Full-time",
-    description: "Leading development of enterprise web applications and mentoring junior developers. Responsible for architecture decisions and technical strategy.",
+    description: "Leading development of AI-powered learning platform with real-time recommendations and personalized course suggestions. Architecting scalable microservices-based backend and developing responsive React dashboards with advanced data visualization.",
     achievements: [
-      "Led a team of 5 developers in building a scalable e-commerce platform serving 100k+ users",
-      "Implemented microservices architecture reducing system response time by 40%",
-      "Mentored 3 junior developers, improving team productivity by 25%",
-      "Introduced CI/CD pipeline reducing deployment time from 2 hours to 15 minutes"
+      "Led development of AI-powered learning platform integrating OpenAI GPT APIs and recommendation engines",
+      "Built scalable microservices-based backend in Node.js + PostgreSQL deployed on AWS ECS with CI/CD pipelines, improving system reliability and reducing deployment time by 40%",
+      "Developed responsive React + Next.js dashboards with advanced data visualization (Recharts/D3.js) for educational analytics and progress tracking",
+      "Optimized database queries and caching layers (Redis) that improved backend performance by ~65%",
+      "Mentored junior developers in React patterns, Git workflows, and clean API design"
     ],
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "Kubernetes", "PostgreSQL"]
+    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS", "Docker", "Redis", "OpenAI API", "D3.js", "TypeScript"]
   },
   {
-    company: "Digital Agency Co.",
+    company: "Twin Sun Solutions",
     position: "Full-Stack Developer",
-    location: "Petaling Jaya, Malaysia",
-    duration: "2020 - 2022",
+    location: "USA (Remote)",
+    duration: "2019 - 2021",
     type: "Full-time",
-    description: "Developed custom web applications for various clients across different industries. Worked closely with design teams to create user-friendly interfaces.",
+    description: "Engineered FinTech SaaS platform for digital payments and financial services. Implemented role-based authentication ensuring PCI DSS compliance and automated CI/CD pipelines for secure financial transactions.",
     achievements: [
-      "Delivered 15+ client projects on time and within budget",
-      "Improved website performance by 60% through optimization techniques",
-      "Collaborated with UX/UI designers to create responsive web applications",
-      "Implemented automated testing reducing bug reports by 50%"
+      "Engineered FinTech SaaS platform for digital payments and financial services using Django + React, handling thousands of daily secure transactions",
+      "Implemented role-based authentication (OAuth2, JWT) ensuring compliance with PCI DSS standards",
+      "Automated CI/CD pipelines using GitHub Actions + AWS CodePipeline, reducing manual deployment overhead",
+      "Integrated third-party APIs (Plaid, Stripe, PayPal, banking APIs) for financial data aggregation",
+      "Built unit & integration tests with PyTest, Jest, and Cypress, boosting code reliability and achieving 90%+ coverage"
     ],
-    technologies: ["Vue.js", "Laravel", "MySQL", "Redis", "Docker", "Git", "Figma"]
+    technologies: ["Django", "React", "Python", "PostgreSQL", "AWS", "Docker", "JWT", "OAuth2", "Stripe", "Plaid"]
   },
   {
-    company: "StartupXYZ",
-    position: "Frontend Developer",
-    location: "Remote",
-    duration: "2019 - 2020",
-    type: "Full-time",
-    description: "Built user interfaces for a fintech startup. Focused on creating intuitive and accessible web applications for financial services.",
+    company: "OST Agency",
+    position: "Full-Stack Developer (Contract)",
+    location: "London, UK (Remote)",
+    duration: "2017 - 2019",
+    type: "Contract",
+    description: "Developed AI Assistant Platform for enterprise clients, integrating chatbots, NLP models, and speech-to-text services. Built scalable backend designed to handle 100k+ concurrent requests with real-time communication features.",
     achievements: [
-      "Developed responsive web application serving 10k+ active users",
-      "Implemented real-time data visualization using Chart.js",
-      "Collaborated with backend team to design RESTful APIs",
-      "Created reusable component library improving development efficiency"
+      "Developed AI Assistant Platform for enterprise clients, integrating chatbots, NLP models, and speech-to-text services (Google Dialogflow, OpenAI, Twilio)",
+      "Built scalable backend using Express.js, GraphQL, and MongoDB, designed to handle 100k+ concurrent requests",
+      "Implemented real-time communication features using WebSockets and SignalR for live chat and support dashboards",
+      "Built admin dashboards and client-facing portals using React + Redux, ensuring mobile responsiveness and accessibility compliance (WCAG 2.1)",
+      "Introduced CI/CD automation and Dockerized development, reducing environment setup time by 70%"
     ],
-    technologies: ["React", "JavaScript", "CSS3", "Chart.js", "REST APIs", "Git"]
+    technologies: ["Express.js", "GraphQL", "MongoDB", "React", "Redux", "WebSockets", "SignalR", "Docker", "OpenAI", "Twilio"]
   },
   {
-    company: "Freelance",
-    position: "Web Developer",
-    location: "Remote",
-    duration: "2018 - 2019",
-    type: "Freelance",
-    description: "Provided web development services to small businesses and startups. Specialized in creating custom websites and web applications.",
+    company: "The Brick Factory",
+    position: "Full-Stack Developer",
+    location: "Washington, DC, USA (Remote)",
+    duration: "2015 - 2017",
+    type: "Full-time",
+    description: "Delivered multiple enterprise and nonprofit web solutions, including CMS-driven websites and campaign tools. Built modular WordPress solutions and migrated clients to Node.js/React stacks for scalability.",
     achievements: [
-      "Completed 20+ freelance projects with 100% client satisfaction",
-      "Built custom WordPress themes and plugins",
-      "Developed e-commerce solutions for local businesses",
-      "Maintained and updated existing websites for long-term clients"
+      "Delivered multiple enterprise and nonprofit web solutions, including CMS-driven websites and campaign tools",
+      "Built modular WordPress + custom PHP plugins, later migrating clients to Node.js/React stacks for scalability",
+      "Designed RESTful APIs and integrated with Salesforce, HubSpot, and third-party CRMs for marketing automation",
+      "Implemented Elasticsearch for content-heavy sites, reducing search latency from seconds to milliseconds",
+      "Collaborated with cross-functional teams in Agile sprints, consistently delivering features ahead of deadlines"
     ],
-    technologies: ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "MySQL"]
+    technologies: ["WordPress", "PHP", "Node.js", "React", "MySQL", "Elasticsearch", "REST APIs", "Salesforce", "HubSpot"]
   }
 ];
 
 const educationData = [
   {
-    institution: "University of Technology Malaysia",
-    degree: "Bachelor of Computer Science",
-    field: "Software Engineering",
-    duration: "2015 - 2019",
-    location: "Johor Bahru, Malaysia",
+    institution: "University of Malaya",
+    degree: "Bachelor of Science",
+    field: "Computer Science",
+    duration: "2011 - 2015",
+    location: "Kuala Lumpur, Malaysia",
     gpa: "3.8/4.0",
     relevantCourses: [
       "Data Structures and Algorithms",
@@ -79,43 +83,33 @@ const educationData = [
       "Software Engineering",
       "Web Development",
       "Computer Networks",
-      "Operating Systems"
-    ]
-  },
-  {
-    institution: "Coursera",
-    degree: "Professional Certificate",
-    field: "Full-Stack Web Development",
-    duration: "2020",
-    location: "Online",
-    gpa: "N/A",
-    relevantCourses: [
-      "HTML, CSS, and JavaScript for Web Developers",
-      "Single Page Web Applications with AngularJS",
-      "Server-side Development with NodeJS, Express and MongoDB",
-      "Front-End Web UI Frameworks and Tools"
+      "Operating Systems",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Graphics",
+      "Software Architecture"
     ]
   }
 ];
 
 const certificationsData = [
   {
-    name: "AWS Certified Solutions Architect",
+    name: "AWS Certified Solutions Architect – Associate",
     issuer: "Amazon Web Services",
     date: "2023",
     credentialId: "AWS-SAA-2023-001"
   },
   {
-    name: "Google Cloud Professional Developer",
-    issuer: "Google Cloud",
-    date: "2022",
-    credentialId: "GCP-PD-2022-002"
-  },
-  {
-    name: "Certified Kubernetes Administrator",
+    name: "Certified Kubernetes Application Developer (CKAD)",
     issuer: "Cloud Native Computing Foundation",
     date: "2022",
-    credentialId: "CKA-2022-003"
+    credentialId: "CKAD-2022-002"
+  },
+  {
+    name: "Microsoft Certified: Azure Developer Associate",
+    issuer: "Microsoft",
+    date: "2022",
+    credentialId: "AZ-204-2022-003"
   }
 ];
 
