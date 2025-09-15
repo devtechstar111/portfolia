@@ -19,21 +19,6 @@ const experienceData = [
     technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS ECS", "Redis", "D3.js", "Recharts", "OpenAI API"]
   },
   {
-    company: "Twin Sun Solutions",
-    position: "Full-Stack Developer",
-    location: "USA (Remote)",
-    duration: "2021 - 2023",
-    type: "Full-time",
-    description: "Engineered a FinTech SaaS platform for digital payments and financial services using Django + React, handling thousands of daily secure transactions.",
-    achievements: [
-      "Implemented role-based authentication (OAuth2, JWT) ensuring compliance with PCI DSS standards",
-      "Automated CI/CD pipelines using GitHub Actions + AWS CodePipeline, reducing manual deployment overhead",
-      "Integrated third-party APIs (Plaid, Stripe, PayPal, banking APIs) for financial data aggregation",
-      "Built unit & integration tests with PyTest, Jest, and Cypress, boosting code reliability and achieving 90%+ coverage"
-    ],
-    technologies: ["Django", "React", "PostgreSQL", "AWS", "OAuth2", "JWT", "Plaid", "Stripe", "PayPal", "PyTest", "Jest", "Cypress"]
-  },
-  {
     company: "OST Agency",
     position: "Full-Stack Developer (Contract)",
     location: "London, UK (Remote)",
