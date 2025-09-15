@@ -28,7 +28,7 @@ const projectsData = [
     description: "A technology solutions website showcasing various tech services and products. Built with responsive design and modern web standards for optimal user experience.",
     image: "/static/blog/rebuild-bakia-prisma/cover.jpg",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO"],
-    liveUrl: "https://www.fullcircl.com/",
+    liveUrl: "https://gizmostech.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
     featured: false
   },
@@ -37,7 +37,7 @@ const projectsData = [
     description: "A comprehensive business platform providing end-to-end solutions for companies. Features include project management, client communication, and business analytics.",
     image: "/static/blog/how-nextauthjs-works/cover.jpg",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "REST API"],
-    liveUrl: "https://app.crmworkspace.com/users/login",
+    liveUrl: "https://www.fullcircl.com/",
     githubUrl: "https://github.com/weijinlim/portfolio",
     featured: false
   },
@@ -46,7 +46,7 @@ const projectsData = [
     description: "A customer relationship management system designed for businesses to manage their client interactions, sales pipeline, and customer data effectively.",
     image: "/static/blog/nextauthjs-behinds-a-proxy/cover.jpg",
     technologies: ["Vue.js", "Laravel", "MySQL", "Bootstrap", "Chart.js"],
-    liveUrl: "https://www.coingecko.com/",
+    liveUrl: "https://app.crmworkspace.com/users/login",
     githubUrl: "https://github.com/weijinlim/portfolio",
     featured: false
   },
