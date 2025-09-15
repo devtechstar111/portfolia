@@ -10,10 +10,7 @@ export default function Footer() {
         <span className="text-black dark:text-white">{siteMetadata.author}</span>
         <span>
           {" "}
-          unless otherwise noted.{" "}
-          <CustomLink className="text-black dark:text-white" href={siteMetadata.siteRepo}>
-            Source
-          </CustomLink>
+          unless otherwise noted.
         </span>
         <div className="w-full py-2">
           <NowPlaying />
