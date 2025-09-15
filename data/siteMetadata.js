@@ -9,7 +9,7 @@ const siteMetadata = {
   siteLogo: "/static/images/logo.png",
   image: "/static/images/lim-weijin-avatar.jpg",
   socialBanner: "/static/images/social-banner.png",
-  email: "devtechstar@gmail.com",
+  email: "limweijin@gmail.com",
   github: "https://github.com/devtechstar111/",
   discord: "https://discord.gg/devtechstar111",
   linkedin: "https://www.linkedin.com/in/limweijin/",
