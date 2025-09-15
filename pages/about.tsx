@@ -39,7 +39,7 @@ export default function About({ about }: InferGetStaticPropsType<typeof getStati
           {/* Resume Download Button */}
           <div className="pt-6">
             <a
-              href="/static/resume/Lim-Wei-Jin-FlowCV-Resume-20250914.pdf"
+              href="/static/resume/Lim-Wei-Jin-Resume.pdf"
               download="limweijin's resume.pdf"
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-lg font-semibold hover:from-primary-700 hover:to-primary-800 hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-md"
             >
