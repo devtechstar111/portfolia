@@ -6,66 +6,62 @@ const experienceData = [
   {
     company: "Wolfpack Digital",
     position: "Senior Full-Stack Developer",
-    location: "Cluj-Napoca, Romania (Remote)",
-    duration: "2021 - Present",
+    location: "Cluj-Napoca, Romania (Remote Collaboration)",
+    duration: "2023 - Present",
     type: "Full-time",
-    description: "Leading development of AI-powered learning platform with real-time recommendations and personalized course suggestions. Architecting scalable microservices-based backend and developing responsive React dashboards with advanced data visualization.",
+    description: "Leading development of AI-powered learning platform with real-time recommendations and personalized course suggestions, integrating Open AI GPT APIs and recommendation engines.",
     achievements: [
-      "Led development of AI-powered learning platform integrating OpenAI GPT APIs and recommendation engines",
-      "Built scalable microservices-based backend in Node.js + PostgreSQL deployed on AWS ECS with CI/CD pipelines, improving system reliability and reducing deployment time by 40%",
+      "Built scalable microservices-based backend in Node.js + PostgreSQL, deployed on AWS ECS with CI/CD pipelines, improving system reliability and reducing deployment time by 40%",
       "Developed responsive React + Next.js dashboards with advanced data visualization (Recharts/D3.js) for educational analytics and progress tracking",
       "Optimized database queries and caching layers (Redis) that improved backend performance by ~65%",
       "Mentored junior developers in React patterns, Git workflows, and clean API design"
     ],
-    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS", "Docker", "Redis", "OpenAI API", "D3.js", "TypeScript"]
+    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS ECS", "Redis", "D3.js", "Recharts", "OpenAI API"]
   },
   {
     company: "Twin Sun Solutions",
     position: "Full-Stack Developer",
     location: "USA (Remote)",
-    duration: "2019 - 2021",
+    duration: "2021 - 2023",
     type: "Full-time",
-    description: "Engineered FinTech SaaS platform for digital payments and financial services. Implemented role-based authentication ensuring PCI DSS compliance and automated CI/CD pipelines for secure financial transactions.",
+    description: "Engineered a FinTech SaaS platform for digital payments and financial services using Django + React, handling thousands of daily secure transactions.",
     achievements: [
-      "Engineered FinTech SaaS platform for digital payments and financial services using Django + React, handling thousands of daily secure transactions",
       "Implemented role-based authentication (OAuth2, JWT) ensuring compliance with PCI DSS standards",
       "Automated CI/CD pipelines using GitHub Actions + AWS CodePipeline, reducing manual deployment overhead",
       "Integrated third-party APIs (Plaid, Stripe, PayPal, banking APIs) for financial data aggregation",
       "Built unit & integration tests with PyTest, Jest, and Cypress, boosting code reliability and achieving 90%+ coverage"
     ],
-    technologies: ["Django", "React", "Python", "PostgreSQL", "AWS", "Docker", "JWT", "OAuth2", "Stripe", "Plaid"]
+    technologies: ["Django", "React", "PostgreSQL", "AWS", "OAuth2", "JWT", "Plaid", "Stripe", "PayPal", "PyTest", "Jest", "Cypress"]
   },
   {
     company: "OST Agency",
     position: "Full-Stack Developer (Contract)",
     location: "London, UK (Remote)",
-    duration: "2017 - 2019",
+    duration: "2019 - 2021",
     type: "Contract",
-    description: "Developed AI Assistant Platform for enterprise clients, integrating chatbots, NLP models, and speech-to-text services. Built scalable backend designed to handle 100k+ concurrent requests with real-time communication features.",
+    description: "Developed AI Assistant Platform for enterprise clients, integrating chatbots, NLP models, and speech-to-text services (Google Dialogflow, OpenAI, Twilio).",
     achievements: [
-      "Developed AI Assistant Platform for enterprise clients, integrating chatbots, NLP models, and speech-to-text services (Google Dialogflow, OpenAI, Twilio)",
       "Built scalable backend using Express.js, GraphQL, and MongoDB, designed to handle 100k+ concurrent requests",
       "Implemented real-time communication features using WebSockets and SignalR for live chat and support dashboards",
       "Built admin dashboards and client-facing portals using React + Redux, ensuring mobile responsiveness and accessibility compliance (WCAG 2.1)",
       "Introduced CI/CD automation and Dockerized development, reducing environment setup time by 70%"
     ],
-    technologies: ["Express.js", "GraphQL", "MongoDB", "React", "Redux", "WebSockets", "SignalR", "Docker", "OpenAI", "Twilio"]
+    technologies: ["Express.js", "GraphQL", "MongoDB", "React", "Redux", "WebSockets", "SignalR", "Google Dialogflow", "OpenAI", "Twilio", "Docker"]
   },
   {
     company: "The Brick Factory",
     position: "Full-Stack Developer",
-    location: "Washington, DC, USA (Remote)",
-    duration: "2015 - 2017",
+    location: "Washington, DC, USA (Remote Collaboration)",
+    duration: "2017 - 2019",
     type: "Full-time",
-    description: "Delivered multiple enterprise and nonprofit web solutions, including CMS-driven websites and campaign tools. Built modular WordPress solutions and migrated clients to Node.js/React stacks for scalability.",
+    description: "Delivered multiple enterprise and nonprofit web solutions, including CMS-driven websites and campaign tools.",
     achievements: [
-      "Delivered multiple enterprise and nonprofit web solutions, including CMS-driven websites and campaign tools",
       "Built modular WordPress + custom PHP plugins, later migrating clients to Node.js/React stacks for scalability",
       "Designed RESTful APIs and integrated with Salesforce, HubSpot, and third-party CRMs for marketing automation",
       "Implemented Elasticsearch for content-heavy sites, reducing search latency from seconds to milliseconds",
       "Collaborated with cross-functional teams in Agile sprints, consistently delivering features ahead of deadlines"
     ],
-    technologies: ["WordPress", "PHP", "Node.js", "React", "MySQL", "Elasticsearch", "REST APIs", "Salesforce", "HubSpot"]
+    technologies: ["WordPress", "PHP", "Node.js", "React", "Elasticsearch", "Salesforce", "HubSpot", "REST APIs", "Agile"]
   }
 ];
 
@@ -74,9 +70,9 @@ const educationData = [
     institution: "University of Malaya",
     degree: "Bachelor of Science",
     field: "Computer Science",
-    duration: "2011 - 2015",
+    duration: "2012 - 2017",
     location: "Kuala Lumpur, Malaysia",
-    gpa: "3.8/4.0",
+    gpa: "N/A",
     relevantCourses: [
       "Data Structures and Algorithms",
       "Database Systems",
@@ -84,32 +80,30 @@ const educationData = [
       "Web Development",
       "Computer Networks",
       "Operating Systems",
-      "Artificial Intelligence",
       "Machine Learning",
-      "Computer Graphics",
-      "Software Architecture"
+      "Artificial Intelligence"
     ]
   }
 ];
 
 const certificationsData = [
   {
-    name: "AWS Certified Solutions Architect – Associate",
+    name: "AWS Certified Solutions Architect Associate",
     issuer: "Amazon Web Services",
     date: "2023",
-    credentialId: "AWS-SAA-2023-001"
+    credentialId: "AWS-SAA-2023"
   },
   {
     name: "Certified Kubernetes Application Developer (CKAD)",
     issuer: "Cloud Native Computing Foundation",
     date: "2022",
-    credentialId: "CKAD-2022-002"
+    credentialId: "CKAD-2022"
   },
   {
     name: "Microsoft Certified: Azure Developer Associate",
     issuer: "Microsoft",
     date: "2022",
-    credentialId: "AZ-204-2022-003"
+    credentialId: "AZ-204-2022"
   }
 ];
 
